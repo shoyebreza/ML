@@ -1,0 +1,91 @@
+﻿Module 2 Quiz
+
+
+1. What is the main role of a Perceptron in deep learning?
+a) To store data
+b) To classify inputs into classes
+c) To reduce dimensionality
+d) To visualize data
+Ans: b) To classify inputs into classes
+ব্যাখ্যা: Perceptron মূলত একটি binary classifier। এটি input features ও weights ব্যবহার করে সিদ্ধান্ত নেয় আউটপুট 0 বা 1 হবে কিনা। সহজভাবে বললে, এটি data কে দুইটা class এ ভাগ করে।
+
+
+2. Which component of a Perceptron controls the importance of an input feature?
+a) Bias
+b) Activation function
+c) Weight
+d) Learning rate
+Ans: c) Weight
+ব্যাখ্যা: Perceptron-এ প্রতিটি input এর সাথে একটি weight যুক্ত থাকে। Weight যত বেশি, সেই feature-এর প্রভাব decision-এর উপর তত বেশি পড়ে।
+
+
+3. What does the bias term do in a Perceptron?
+a) Increases learning speed
+b) Shifts the decision boundary
+c) Normalizes input values
+d) Removes noise from data
+Ans: b) Shifts the decision boundary
+ব্যাখ্যা: Bias decision boundary-কে origin থেকে সরিয়ে নিতে সাহায্য করে। Bias না থাকলে model অনেক সময় সঠিকভাবে data আলাদা করতে পারে না।
+
+
+4. Which activation function is traditionally used in a basic Perceptron?
+a) Sigmoid
+b) ReLU
+c) Step function
+d) Softmax
+Ans: c) Step function
+ব্যাখ্যা: Classic Perceptron এ Step function ব্যবহার করা হয়, যেখানে output হয় শুধু 0 বা 1। এটি threshold ভিত্তিক decision নেয়।
+
+
+5. What happens when the predicted output is wrong during training?
+a) Weights remain unchanged
+b) Learning stops
+c) Weights are updated
+d) Bias is removed
+Ans: c) Weights are updated
+ব্যাখ্যা: Perceptron learning rule অনুযায়ী prediction ভুল হলে weights update হয়। এই update model-কে ধীরে ধীরে সঠিক decision শিখতে সাহায্য করে।
+
+
+6. Which gate can be solved by a single-layer Perceptron?
+a) XOR
+b) XNOR
+c) AND
+d) All logic gates
+Ans: c) AND
+ব্যাখ্যা: AND gate linearly separable, তাই single-layer Perceptron সহজেই এটি শিখতে পারে। XOR এই বৈশিষ্ট্যটি রাখে না।
+
+
+7. Why is XOR gate difficult for a single Perceptron?
+a) Too many inputs
+b) Data is noisy
+c) It is not linearly separable
+d) Activation function is weak
+Ans: c) It is not linearly separable
+ব্যাখ্যা: XOR gate-এর data points কে একটি সরল রেখা দিয়ে আলাদা করা যায় না। এজন্য single-layer Perceptron এখানে fail করে।
+
+
+8. What does the learning rate control in weight update?
+a) Direction of update
+b) Speed of learning
+c) Number of iterations
+d) Input scaling
+Ans: b) Speed of learning
+ব্যাখ্যা: Learning rate নির্ধারণ করে weight কত দ্রুত পরিবর্তন হবে। বেশি হলে learning unstable, কম হলে learning ধীর হয়।
+
+
+9. In Perceptron weight update, which factor indicates the error?
+a) Input value
+b) Learning rate
+c) Actual output − Predicted output
+d) Bias
+Ans: c) Actual output − Predicted output
+ব্যাখ্যা: Weight update এ সবচেয়ে গুরুত্বপূর্ণ অংশ হলো error term। Actual output আর predicted output-এর পার্থক্যই model-কে শেখায় কোথায় ভুল হয়েছে।
+
+
+10. What is the key limitation of a single-layer Perceptron?
+a) Cannot handle large data
+b) Cannot work without bias
+c) Cannot learn non-linear boundaries
+d) Cannot update weights
+Ans: c) Cannot learn non-linear boundaries
+ব্যাখ্যা: Single-layer Perceptron শুধু linear decision boundary শিখতে পারে। Non-linear সমস্যা সমাধানের জন্য multi-layer network প্রয়োজন।
